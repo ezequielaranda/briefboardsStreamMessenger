@@ -7,7 +7,7 @@ import { StreamChat } from 'stream-chat';
 import 'stream-chat-react/dist/css/index.css';
 
 const chatClient = new StreamChat('ujydutkcczb8');
-const userToken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoicHVycGxlLW1lYWRvdy02In0.Hzkpjsva-5muqVamAIzRZhs6w4S9BNkiZV5zc3ZHVbg';
+const userToken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoicmFzcHktZGF3bi02In0.DOGstHQ5h4zQ0K9vtsNMB-MviTq_BTkurKotKf7PFwQ';
 
 // custom channel preview component
 class MyChannelPreview extends React.Component {
@@ -38,14 +38,14 @@ class MyMessageComponent extends React.Component {
 
 chatClient.setUser(
   {
-    id: 'purple-meadow-6',
-    name: 'Purple meadow',
-    image: 'https://getstream.io/random_svg/?id=purple-meadow-6&name=Purple+meadow'
+    id: 'raspy-dawn-6',
+    name: 'Raspy dawn',
+    image: 'https://getstream.io/random_svg/?id=raspy-dawn-6&name=Raspy+dawn'
   },
   userToken,
 );
 
-const filters = { type: 'messaging', members: { $in: ['purple-meadow-6'] } };
+const filters = { type: 'messaging', members: { $in: ['raspy-dawn-6'] } };
 const sort = { last_message_at: -1 };
 const channels = chatClient.queryChannels(filters, sort);
 
